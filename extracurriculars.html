@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracurriculars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--헤더!!-->
+        <header>
+            <div>
+                <a href="home.html" id="logo"><h1>SUNGHO HOME</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">ABOUT ME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="extracurriculars.html">EXTRACURRICULARS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--사이드바!!-->
+        <aside>
+            <section id="mypic">
+                <img src="images/Picture(Sungho Lee).png" class = "profilePic" alt="Sungho's profile picture">
+                <h2 class = "profileName">Sungho Lee</h2>
+            </section>
+            <section id="profile">
+                <p><a href="mailto: sungholeehl@gmail.com"><img src="images/email.png" class = "smallIconProfile" alt="email page"> email</a></p>
+                <p><a href="https://www.linkedin.com/in/sungho-lee-hlk/"><img src="images/linkedin.png" class = "smallIconProfile" alt="linkedIn page"> LinkedIn</a></p>
+                <p><a href="https://github.com/shlee55"><img src="images/github.png" class = "smallIconProfile" alt="github page"> GitHub</a></p>
+                <p><a href="file/RESUME - Sungho Lee.pdf"><img src="images/resume.png" class = "smallIconProfile" alt="resume page"> Resume</a></p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>        
+        </aside>
+
+        <!--메인!!-->
+        <main class="contentsExtra">
+            <section class="youtube">
+                <h1 class="category">EXTRACURRICULARS<hr></h1>
+                <div class = "divBox">
+                    <h3><img src="images/film.png" class = "smallIconExtra" alt="film icon"> Filming family videos</h3>
+                    <p>Love to create films of my family!</p>
+                    <iframe width="420" height="330" src="https://www.youtube.com/embed/0zxmDcIZ_TI?controls=1">
+                    </iframe>
+                    <iframe width="420" height="330" src="https://www.youtube.com/embed/cdGBPuP_A44?controls=1">
+                    </iframe>
+                </div>
+                <div class = "divBox">
+                    <h3><img src="images/travel.png" class = "smallIconExtra" alt="travel icon"> Moving from Madison, WI to Los Angeles, CA</h3>
+                    <p>I had a fourteen days of long roadtrip with my wife and 6 month-old baby!<br>
+                    visited ten states during this trip.</p>
+                    <div class = "slide">
+                        <div class="imgbox">
+                            <img src="images/roadtrip/1.jpg" class = "roadtrip" alt="roadtrip map">
+                        </div>
+                        <button class="button_Extra" onclick="prev()">Prev</button>
+                        <button class="button_Extra" onclick="next()">Next</button>
+                     </div>
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <!--푸터!!-->
+        <footer>
+            <section id="bottomMenu">
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div>© 2021 Sungho Lee. All rights reserved.</div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
