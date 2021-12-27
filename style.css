@@ -3,40 +3,57 @@
     src:url(font/abster-webfont.woff) format('woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Orbitron:wght@800&family=Quicksand&display=swap');
 
 body{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.459),rgba(0,0,0,0.459)),url(images/family_backgroud.jpeg);*/
+    background-color: rgba(150, 150, 150); 
+    /*background-size: 100%;*/
+    background-attachment: fixed;
+    font-family: monospace;
+    font-size: 20px;
+    margin:0;
+    color:white;
+}
+
+.bodyHome {
     background: linear-gradient(rgba(0, 0, 0, 0.459),rgba(0,0,0,0.459)),url(images/family_backgroud.jpeg);
     background-size: 100%;
-    box-shadow: 0px 0px 80px 100px #5c5a56;
     background-attachment: fixed;
-
-}
-.container{
-    width:80%;
-    min-width:1200px;
-    max-width:1400px;
-    background-clip: content-box;
-    font-family: 'Nanum Gothic Coding', monospace, sans-serif;
-    margin-left: auto;
-    margin-right: auto;    
 }
 
 header{
+    width:100%;
+    height:80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+}
+
+.insideHeader{
+    width:80%;
     min-width: 1200px;
     height:80px;
     margin-left: auto;
     margin-right: auto;  
-    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.container{
+    width:80%;
+    min-width:1200px;
+    max-width:1400px;
+    background-clip: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:80px;    
+}
+
 aside{
     width:17%;
     max-width:250px;
-    height:100vh;
+    height:900px;
     padding: 20px 20px 20px 20px;
     background-color: rgba(255, 255, 255, 0.4);
     float:left;
@@ -50,20 +67,26 @@ main{
 }
 
 footer{
-    min-width: 1180px;
-    height:50px;
-    margin-left: auto;
-    margin-right: auto;  
-    padding: 10px;
+    width: 100%;
+    height:80px;
     background-color: rgba(255, 255, 255, 0.5);
     clear:left;
 }
 
+.insideFooter{
+    width:80%;
+    min-width: 1200px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 10px;
+}
+
 #logo{
-    font-family: abster;
+    font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #logo h1{
@@ -111,7 +134,6 @@ nav ul li a:hover{
 }
 
 .contentsHome{
-    color: white;
     text-align: center;
 }
 
@@ -124,8 +146,7 @@ nav ul li a:hover{
 }
 
 main .category{
-    font-family:abster;
-    color:white;
+    font-family: 'Orbitron', sans-serif;
 }
 
 main section{
@@ -133,19 +154,15 @@ main section{
     overflow:hidden;
 }
 
-main section .imgBox{
-    width: 200px;
-    height: 200px;
-    clear:both;
-    float: left;
-}
-
-main section .imgBox .aboutUsImg{
+main section .backgroundImg{
     width:200px;
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 
 main section .divBox{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     min-width:70%;
     padding:10px;
     float: left;
@@ -156,27 +173,19 @@ main section .divBox h3{
     margin:10px;
 }
 
-main section .divBox p, li{
-    color: white;
-}
-
 main section .divBox .eduExpLink:hover{
     margin:10px;
     color: red;
 }
 
-.contentsAboutus section .divBox{
-    width:600px;
-}
-
-.contentsAboutus section .eduExp{
+.contentsBackground section .eduExp{
     text-decoration: none;
 }
 
 .profilePic{
     width: 140px;
     border-radius: 90px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid white;
     padding: 10px;
     align-items: center;
     margin-left: auto;
@@ -210,6 +219,20 @@ main .botton_projects{
 main button:hover{
     background-color: rgb(213, 243, 213);
 
+}
+
+main ul {  
+    list-style-position: inside;
+    text-indent: -30px;    
+}
+
+main p, main li{
+    font-family: Calibri, sans-serif;
+    font-size:22px;
+}
+
+main p strong, main li strong{
+    background-color: rgba(100,100,100);
 }
 
 .smallIconProfile{
