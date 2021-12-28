@@ -47,7 +47,7 @@ header{
     background-clip: content-box;
     margin-left: auto;
     margin-right: auto;
-    padding-top:80px;    
+    padding-top:80px; 
 }
 
 aside{
@@ -60,7 +60,7 @@ aside{
 }
 
 main{
-    width:53%;
+    width:70%;
     min-width:900px;
     padding: 20px;
     float:left;
@@ -155,7 +155,7 @@ main section{
 }
 
 main section .backgroundImg{
-    width:200px;
+    width:180px;
     float:left;
     margin-right:10px;
     margin-bottom:10px;
@@ -228,7 +228,7 @@ main ul {
 
 main p, main li{
     font-family: Calibri, sans-serif;
-    font-size:22px;
+    font-size:24px;
 }
 
 main p strong, main li strong{
